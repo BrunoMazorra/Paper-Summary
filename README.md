@@ -1,38 +1,46 @@
 # SCRF: Template - Research Summary
 
 ---
-title: [Research Summary - XXX]
+title: [Research Summary - DO NOT RUG ON ME: ZERO-DIMENSIONAL SCAM DETECTION]
 description: One or two sentences of what the post is about.
-tags: [tag1, tag2, tag3]
+tags: [DeFi, Machine learning, Scam Detection,Rug pulls]
 created: [2020-12-25]
-researcher: [full name]
+researcher: [Bruno Mazorra and Victor Adan]
 ---
 
 > ### TLDR
 >
-> Contains one to three bullets that distill the most condensed information about the key takeaways, notable results, or novel methodologies contained in the paper
+> - The reaserchers expand the dataset of Uniswap v2 scam tokens.
+> - They provide  a theoretical classification of three different types of rug pulls and provide tools to identify them.
+> - The authors introduce two highly accurate and precise Machine learning-based models to discriminate between malicious and nonmalicious tokens in different scenarios before the malicious manuever.
 
 ### Core Research Question
 
-Provide a concise one-sentence statement of the core question being considered in the research paper.
+Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? Can we predict if a project is a rug pull before the malicius manuver? 
 
 ### Citation
 
-A journal-style citation (MLA, APA, IEEE, etc.) of the authors. The precise format is not predetermined, but please be as consistent/standardized as possible. Any quotes, graphs, and data used in the summary must be included in this section, preferably using MLA-9.
-
-A link to the original research source on a non-paywall host; can be a SCRF-native host.
-
-Any citations to externally referenced works should either be included in the background section of the document or inserted as an inline hyperlink to the mentioned work where it is mentioned in the summary.
+- Mazorra, Bruno, Victor Adan, and Vanesa Daza. "Do not rug on me: Zero-dimensional Scam Detection." arXiv preprint arXiv:2201.07220 (2022).
 
 ### Background
 
-Provide some context about the concepts and domain space(s) discussed in the research paper.
-
-The background section can include definitions, additional color, or references to prior works that are important to understand.
+-
 
 ### Summary
 
-This section includes a 1-2 sentence summarization of each of the key sections of the original research paper.
+1. Introduction.
+2. Related Work.
+3. Preliminars
+    - Backround.
+4. Malicious Uniswap Maneuvers
+    - Classification of different type of rug pulls.
+5. Data Collection:
+    - Overview of the method used to extract all the necessary data.
+6. Token Labelling.
+    - Provide the methodology to label tokens as scams or non-scams.
+    - Overview of the results obtained by the labelling methodology proposed.
+7. 
+
 
 ### Method
 
@@ -60,4 +68,5 @@ Share any follow-up work discussed by the researchers.
 
 ### Applicability
 
-Summarize any notes included by the research team on how this work is currently or might be applied in action in the industry. If not included, insert some commentary of clear-cut or obvious potential applications of the research work.
+- To better understand the methodology used by scammers to execute rug pulls.
+- Provide machine learning tools to protect users from permanet losses. 
