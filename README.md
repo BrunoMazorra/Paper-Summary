@@ -57,14 +57,18 @@ As explained above, most tokens are labelled as malicious. This implies that the
 
 #### Activity based Method Results
 
+<p align="center">
 <img src="Results1 method.png" width="50%" />
+</p>
 
 Both XGBoost and FT-Transformer get high metrics for accuracy, recall, precision, and F1-Score. However, XGBoost outperforms FT-Transformer in all metrics. 
 In particular, XGBoost obtains an accuracy of 0.9936, recall of 0.9540 and precision of 0.9838 in distinguishing non-malicious tokens from scams. In contrast, FT-Transformer gets an accuracy of 0.9890, recall of 0.9180 and precision of 0.9752. 
 Therefore, from now we will only analyse on XBoost results. 
 
+<p align="center">
 <img src="shap_values.png" width="60%" />
-
+</p>
+    
 The figure above shows the feature importance in terms of SHAP value on the left side, and, on the right, the impact on the final output.
 Most malicious tokens die in the first 24 hours after the pool is created; by contrast, non-malicious tokens have longer lives. This explains why features such as number of transactions or number of unique addresses have so much weight in the model. 
 Also,  noticed that less block difference between token and pool creation implies negative SHAP values, and negative SHAP values should correspond to malicious tokens. This conclusion coincides with (cite) since several of the malicious tokens take advantage of social trends by copying the name of official tokens and taking money from investors who get confused. Moreover, this technique implies speed in the creation of the token and the pool since otherwise, the trend may be lost.
@@ -73,8 +77,10 @@ Also,  noticed that less block difference between token and pool creation implie
 
 The results of the second method must be understood from another perspective since the problem posed is not the same. The difference with respect to the first method lies in the fact that we evaluate all the tokens at a particular time after the creation of their respective pools. For each labelled token, we have computed its features in each of the 24 hours after its pool creation. Note that, in this case, we are training both models for each hour. Therefore, we only have one evaluation point for each token.
 
+<p align="center">
 <img src="metric_evolution.png" width="60%" />
-
+</p>
+    
 In general, XGBoost gets better metrics, except precision in some cases. Also, metrics of the first hour are lower than those of the last.
 Our algorithm obtains a very high accuracy even in the first hours. However, the precision, recall and f1-score are lower than in Activity based Method. In the best of cases, i.e. 20 hours after the creation of the pool, our best algorithm obtains a recall of 0.789. This could indicate that while malicious tokens are easily detectable in the first few hours, non-malicious tokens require more time. On the other hand, the precision remains quite high compared to the recall. This implies that, although the algorithms do not have a strong ability to detect non-malicious tokens, once they predict that one of them is non-malicious, it is very likely to be the case. 
 
