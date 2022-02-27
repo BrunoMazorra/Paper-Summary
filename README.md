@@ -62,7 +62,7 @@ As explained above, most tokens are labelled as malicious. This implies that the
 Both XGBoost and FT-Transformer get high metrics for accuracy, recall, precision, and F1-Score. However, XGBoost outperforms FT-Transformer in all metrics. 
 In particular, XGBoost obtains an accuracy of 0.9936, recall of 0.9540 and precision of 0.9838 in distinguishing non-malicious tokens from scams. In contrast, FT-Transformer gets an accuracy of 0.9890, recall of 0.9180 and precision of 0.9752. 
 
-<img src="shap_values.png" width="50%" />
+<img src="shap_values.png" width="35%" />
 
 In the figure above we show, the feature importance in terms of SHAP value applied in the first method. As previously said, most of malicious tokens die in the first 24 hours after the pool is created; by contrast, non-malicious tokens have longer life. This explains why features such as number of 681 transactions or number of unique addresses have so much weight in the model. Another important feature is the difference in blocks between the creation of the token and the pool. 
 We notice that less block difference between token and pool creation implies negative SHAP values, and negative SHAP values should correspond to malicious tokens. This conclusion coincides with [44] since several of the malicious tokens take advantage of social trends by copying the name of official tokens and take money from investors who get confused. This technique implies speed in the creation of the token and the pool, since otherwise the trend may be lost.
