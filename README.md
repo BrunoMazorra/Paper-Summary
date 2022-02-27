@@ -71,21 +71,25 @@ Also,  noticed that less block difference between token and pool creation implie
 
 #### 24 Early Method Results
 
-The results of the second method must be understood from another perspective, since the problem posed is not the same. As we said, the difference with respect to the first method lies in the fact that, we evaluate all the tokens at a certain time after the creation of their respective pools. 
+The results of the second method must be understood from another perspective since the problem posed is not the same. The difference with respect to the first method lies in the fact that we evaluate all the tokens at a particular time after the creation of their respective pools. For each labelled token, we have computed its features in each of the 24 hours after its pool creation. Note that, in this case, we are training both models for each hour. Therefore, we only have one evaluation point for each token.
+
+
 
 
 ### Discussion and Key Takeaways
 
-Summarize any discussion/commentary sections included by the researchers. Identify the most concise description of any perspectives or viewpoints the researchers explored in this section.
+<!-- Summarize any discussion/commentary sections included by the researchers. Identify the most concise description of any perspectives or viewpoints the researchers explored in this section.
 
-Summarize the conclusions or key takeaways as included by the researchers.
+Summarize the conclusions or key takeaways as included by the researchers. -->
 
 ### Implications and Follow-ups
 
-Summarize the implicit or explicit implications of the study. If the researchers include such a section, include a few of the most important points discussed. If not, insert some commentary of clear-cut or obvious implications of the work.
+<!-- Summarize the implicit or explicit implications of the study. If the researchers include such a section, include a few of the most important points discussed. If not, insert some commentary of clear-cut or obvious implications of the work.
 
 Share any follow-up work discussed by the researchers.
-
+ -->
+ 
+ 
 ### Applicability
 
 - To better understand the methodology used by scammers to execute rug pulls.
