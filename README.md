@@ -52,7 +52,7 @@ For each key step, summarize the nature of the specific approach that the resear
 
 ### Results
 
-As explained above, most tokens are labelled as malicious. This implies that the final dataset would be highly unbalanced. Indeed, it would be enough to label all of them as malicious to achieve an accuracy of 97,7%. Thus, we labelled the non-malicious tokens as one and the malicious tokens as zero and tried to increase the performance in predicting non-malicious tokens. To validate both methods we used 5-fold cross-validation, therefore all the results will be presented as the mean and standard deviation of all folds.
+As explained above, most tokens are labelled as malicious. This implies that the final dataset will be highly unbalanced. Indeed, it would be enough to label all of them as malicious to achieve an accuracy of 97,7%. Thus, we labelled the non-malicious tokens as one and the malicious tokens as zero and tried to increase the performance in predicting non-malicious tokens. To validate both methods we used 5-fold cross-validation, therefore all the results will be presented as the mean and standard deviation of all folds.
 
 
 #### Activity based Method Results
