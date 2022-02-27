@@ -44,17 +44,6 @@ Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? C
 
 ### Method
 - Labelling: First, we define the maximum drop and the recovery of token prices and liquidity time series.
-
-Let 
-
-$$X = \{X_{t}\mid t\in\{0,...,S\}\}$$
-
-, be the time series representing the price or liquidity in all the token activity up to the last sync event $S$. The maximum drop is defined as
-$
-MD = \left|\frac{X_{l}-X_{h}}{X_{h}}\right|,    
-$
-where $X_h = \text{max}\{X_\tau\mid\tau\in\{0,...,S\}\}$, $h = \text{argmax}\{X_\tau\mid \tau\in\{0,...,S\}\}$ and $X_l = \text{min}\{X_\tau\mid\tau\in\{h,...,S\}\} $.
-
 - 
 - 
 We defined two methods that use Machine Learning models to discriminate between malicious and non-malicious tokens in different scenarios. In the first scenario, tokens can be evaluated at any block prior to the malicious maneuver. In the second scenario, all tokens are evaluated at a certain time after the creation of their respective pools.
