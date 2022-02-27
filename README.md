@@ -44,11 +44,15 @@ Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? C
 
 ### Method
 
+We defined two methods that use Machine Learning models to discriminate between malicious and non-malicious tokens in different scenarios. In the first scenario, tokens can be evaluated at any block prior to the malicious maneuver. In the second scenario, all tokens are evaluated at a certain time after the creation of their respective pools. Specifically, we use a new Machine Learning algorithm based on attention mechanisms for tabular data called FT-Transformer.
+
 Describe the general approach of the paper (e.g scientific experiment, data/modeling, mathematical proofs) then outline the key steps that the researchers undertook to perform the study.
 
 For each key step, summarize the nature of the specific approach that the researchers used to complete each step (e.g. statistical test, logic proof, data-driven model).
 
 ### Results
+
+## Activity based Method Results
 
 <img src="Results1 method.png" width="50%" />
 
