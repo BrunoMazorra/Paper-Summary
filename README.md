@@ -71,7 +71,7 @@ Therefore, from now we will only analyse on XBoost results.
     
 The figure above shows the feature importance in terms of SHAP value on the left side, and, on the right, the impact on the final output.
 Most malicious tokens die in the first 24 hours after the pool is created; by contrast, non-malicious tokens have longer lives. This explains why features such as number of transactions or number of unique addresses have so much weight in the model. 
-Also,  noticed that less block difference between token and pool creation implies negative SHAP values, and negative SHAP values should correspond to malicious tokens. This conclusion coincides with (cite) since several of the malicious tokens take advantage of social trends by copying the name of official tokens and taking money from investors who get confused. Moreover, this technique implies speed in the creation of the token and the pool since otherwise, the trend may be lost.
+Also, noticed that less block difference between token and pool creation implies negative SHAP values, and negative SHAP values should correspond to malicious tokens. This conclusion coincides with (cite) since several of the malicious tokens take advantage of social trends by copying the name of official tokens and taking money from investors who get confused. This technique implies speed in the creation of the token and the pool since otherwise, the trend may be lost.
 
 #### 24 Early Method Results
 
@@ -82,7 +82,7 @@ The results of the second method must be understood from another perspective sin
 </p>
     
 In general, XGBoost gets better metrics, except precision in some cases. Also, metrics of the first hour are lower than those of the last.
-Our algorithm obtains a very high accuracy even in the first hours. However, the precision, recall and f1-score are lower than in Activity based Method. In the best of cases, i.e. 20 hours after the creation of the pool, our best algorithm obtains a recall of 0.789. This could indicate that while malicious tokens are easily detectable in the first few hours, non-malicious tokens require more time. On the other hand, the precision remains quite high compared to the recall. This implies that, although the algorithms do not have a strong ability to detect non-malicious tokens, once they predict that one of them is non-malicious, it is very likely to be the case. 
+Our algorithm obtains a very high accuracy even in the first hours. However, the precision, recall and f1-score are lower than in Activity based Method. In the best of cases, i.e. 20 hours after the creation of the pool, our best algorithm obtains a recall of 0.789. This could indicate that while malicious tokens are easily detectable in the first few hours, non-malicious tokens require more time.
 
 #### Unicrypt Results
 
