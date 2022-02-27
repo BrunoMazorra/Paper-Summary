@@ -61,6 +61,7 @@ As explained above, most tokens are labelled as malicious. This implies that the
 
 Both XGBoost and FT-Transformer get high metrics for accuracy, recall, precision, and F1-Score. However, XGBoost outperforms FT-Transformer in all metrics. 
 In particular, XGBoost obtains an accuracy of 0.9936, recall of 0.9540 and precision of 0.9838 in distinguishing non-malicious tokens from scams. In contrast, FT-Transformer gets an accuracy of 0.9890, recall of 0.9180 and precision of 0.9752. 
+Therefore, from now we will only analyse on XBoost results. 
 
 <img src="shap_values.png" width="60%" />
 
