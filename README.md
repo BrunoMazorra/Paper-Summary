@@ -45,10 +45,10 @@ Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? C
 ### Method
 
 We defined two methods that use Machine Learning models to discriminate between malicious and non-malicious tokens in different scenarios. In the first scenario, tokens can be evaluated at any block prior to the malicious maneuver. In the second scenario, all tokens are evaluated at a certain time after the creation of their respective pools. Specifically, we use a new Machine Learning algorithm based on attention mechanisms for tabular data called FT-Transformer.
-
+<!-- 
 Describe the general approach of the paper (e.g scientific experiment, data/modeling, mathematical proofs) then outline the key steps that the researchers undertook to perform the study.
 
-For each key step, summarize the nature of the specific approach that the researchers used to complete each step (e.g. statistical test, logic proof, data-driven model).
+For each key step, summarize the nature of the specific approach that the researchers used to complete each step (e.g. statistical test, logic proof, data-driven model). -->
 
 ### Results
 
@@ -73,7 +73,10 @@ Also,  noticed that less block difference between token and pool creation implie
 
 The results of the second method must be understood from another perspective since the problem posed is not the same. The difference with respect to the first method lies in the fact that we evaluate all the tokens at a particular time after the creation of their respective pools. For each labelled token, we have computed its features in each of the 24 hours after its pool creation. Note that, in this case, we are training both models for each hour. Therefore, we only have one evaluation point for each token.
 
+<img src="metric_evolution.png" width="60%" />
 
+In general, XGBoost gets better metrics, except precision in some cases. Also, metrics of the first hour are lower than those of the last.
+Our algorithm obtains a very high accuracy even in the first hours. However, the precision, recall and f1-score are lower than in Activity based Method. In the best of cases, i.e. 20 hours after the creation of the pool, our best algorithm obtains a recall of 0.789. This could indicate that while malicious tokens are easily detectable in the first few hours, non-malicious tokens require more time. On the other hand, the precision remains quite high compared to the recall. This implies that, although the algorithms do not have a strong ability to detect non-malicious tokens, once they predict that one of them is non-malicious, it is very likely to be the case. 
 
 
 ### Discussion and Key Takeaways
