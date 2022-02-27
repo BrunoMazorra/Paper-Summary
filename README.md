@@ -52,12 +52,12 @@ For each key step, summarize the nature of the specific approach that the resear
 
 ### Results
 
-As explained in the previous section, the dataset provided is unbalanced. Indeed, it would be enough to label all of them as malicious to achieve an accuracy of 97,7%. Therefore, we want to increase the performance in predicting non-malicious tokens. 
+As explained above, most tokens are labelled as malicious. This implies that the final dataset would be highly unbalanced. Indeed, it would be enough to label all of them as malicious to achieve an accuracy of 97,7%. Thus, we label the non-malicious tokens as one and the malicious tokens as zero and try to increase the performance in predicting non-malicious tokens. 
 
 #### Activity based Method Results
 
 Both XGBoost and FT-Transformer get high metrics for accuracy, recall, precision, and F1-Score. However, XGBoost outperforms FT-Transformer in all metrics. 
-In particular, XGBoost obtains an accuracy of 0.9936, recall of 0.9540 and precision of 0.9838 in distinguishing non-malicious tokens from scams while FT-Transformer obtains an accuracy of 0.9890, recall of 0.9180 and precision of 0.9752. 
+In particular, XGBoost obtains an accuracy of 0.9936, recall of 0.9540 and precision of 0.9838 in distinguishing non-malicious tokens from scams. In contrast, FT-Transformer gets an accuracy of 0.9890, recall of 0.9180 and precision of 0.9752. 
 
 <img src="Results1 method.png" width="50%" />
 
