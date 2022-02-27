@@ -52,7 +52,7 @@ For each key step, summarize the nature of the specific approach that the resear
 
 ### Results
 
-###### Activity based Method Results
+#### Activity based Method Results
 
 <img src="Results1 method.png" width="50%" />
 
