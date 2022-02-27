@@ -58,7 +58,7 @@ As explained above, most tokens are labelled as malicious. This implies that the
 #### Activity based Method Results
 
 <p align="center">
-<img src="Results1 method.png" width="50%" />
+<img src="Results1 method.png" width="60%" />
 </p>
 
 Both XGBoost and FT-Transformer get high metrics for accuracy, recall, precision, and F1-Score. However, XGBoost outperforms FT-Transformer in all metrics. 
@@ -84,6 +84,10 @@ The results of the second method must be understood from another perspective sin
 In general, XGBoost gets better metrics, except precision in some cases. Also, metrics of the first hour are lower than those of the last.
 Our algorithm obtains a very high accuracy even in the first hours. However, the precision, recall and f1-score are lower than in Activity based Method. In the best of cases, i.e. 20 hours after the creation of the pool, our best algorithm obtains a recall of 0.789. This could indicate that while malicious tokens are easily detectable in the first few hours, non-malicious tokens require more time. On the other hand, the precision remains quite high compared to the recall. This implies that, although the algorithms do not have a strong ability to detect non-malicious tokens, once they predict that one of them is non-malicious, it is very likely to be the case. 
 
+#### Unicrypt Results
+
+First, from our list of labelled tokens, 745 use Unicrypt, 725 are labelled as malicious and 20 as non-malicious.
+Then, from the unlabelled tokens, we compute their features up to the present time and use the Activity based Method with XGBoost algorithm to evaluate them. Based on these predictions, 2544 of non-labelled tokens using Unicrypt, 2211 are predicted to be malicious and 333 non-malicious.
 
 ### Discussion and Key Takeaways
 
