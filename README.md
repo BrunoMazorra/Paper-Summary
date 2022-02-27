@@ -50,9 +50,7 @@ For each key step, summarize the nature of the specific approach that the resear
 
 ### Results
 
-Highlight the most salient components of the work product or findings produced by the researchers.
-
-Include any key graphs, tables, data, or other annotations/appendices that clearly communicate the results.
+<img src="Results1 method.png" width="50%" />
 
 ### Discussion and Key Takeaways
 
