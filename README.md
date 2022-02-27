@@ -69,6 +69,10 @@ The figure above shows the feature importance in terms of SHAP value on the left
 Most malicious tokens die in the first 24 hours after the pool is created; by contrast, non-malicious tokens have longer lives. This explains why features such as number of transactions or number of unique addresses have so much weight in the model. 
 Also,  noticed that less block difference between token and pool creation implies negative SHAP values, and negative SHAP values should correspond to malicious tokens. This conclusion coincides with (cite) since several of the malicious tokens take advantage of social trends by copying the name of official tokens and taking money from investors who get confused. Moreover, this technique implies speed in the creation of the token and the pool since otherwise, the trend may be lost.
 
+#### 24 Early Method Results
+
+The results of the second method must be understood from another perspective, since the problem posed is not the same. As we said, the difference with respect to the first method lies in the fact that, we evaluate all the tokens at a certain time after the creation of their respective pools. 
+
 
 ### Discussion and Key Takeaways
 
