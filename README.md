@@ -48,7 +48,9 @@ In this work, we introduce a methodology to detect rug pulls before the maliciou
 
 
 ### Method
-- **Data collection**:
+- **Data collection**: To obtain all the data needed to do the labelling and the analysis, we used an [Infura archive](https://infura.io/) node and the Etherscan
+API. To obtain the state of the Uniswap exchange and the tokens, we used the events produced by their respective
+smart contracts. To obtain the token transactions creation and the source code, we used [Etherscan API](https://etherscan.io/apis).
 - **Labelling**: First, we defined the maximum drop and the recovery of token prices and liquidity time series. The maximum drop (MD) is the largest drop from a peak to a trough. In our context, the maximum drop measures fall in the price or liquidity of the Uniswap listed pools. Also, if more than one month has passed between the last movement or transaction of the token so far, we consider that the token is inactive. 
 On the other hand, unlike malicious tokens, non-malicious tokens cannot be chosen from a liquidity, price, and activity analysis. Given a token, it may be considered malicious if there has been at least one rug pull at some point in its activity. However, a token that has not had any rug pull cannot be considered non-malicious, since it could experience a rug pull later on. Therefore, we take advantage of audits carried out by external companies (Certik, Quantstamp, Hacken...). Thus, a list of 674 tokens labelled as non-malicious have been mined from different sources: [coinmarketcap](https://coinmarketcap.com/view/defi/), [coingecko](https://www.coingecko.com/en/categories/decentralized-finance-defi), [etherscan](https://etherscan.io/tokens).
 The final list contains 27,588 labelled tokens, 631 labelled as non-malicious tokens and 26,957 labelled as malicious. 
