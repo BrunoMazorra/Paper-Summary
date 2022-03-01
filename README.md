@@ -45,15 +45,15 @@ Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? C
 ### Method
 
 - Labelling: First, we defined the maximum drop and the recovery of token prices and liquidity time series. The maximum drop (MD) is the largest drop from a peak to a trough. In our context, the maximum drop measures fall in the price or liquidity of the Uniswap listed pools. The recovery (R) is the largest pump from the bottom. To ensure that these fluctuations are not due to simple market movement, we computed the time elapsed since the last movement of the pool or token transfer to 13/09/2021. If more than one month has passed between the last movement or transaction of the token so far, we consider that the token is inactive. 
-On the other hand, unlike malicious tokens, non-malicious tokens cannot be chosen from a liquidity, price, and activity analysis. Given a token, it may be considered malicious if there has been at least one rug pull at some point in its activity. However, a token that has not had any rug pull cannot be considered non-malicious, since it could experience a rug pull later on. Therefore, we take advantage of audits carried out by external companies (Certik, Quantstamp, Hacken...). The final list contains 27,588 labelled tokens, 631 labelled as non-malicious tokens and 26,957 labelled as malicious. Within the malicious, 24,870 are fast rug pulls and 2,087 do not contain LP Burn events.
+On the other hand, unlike malicious tokens, non-malicious tokens cannot be chosen from a liquidity, price, and activity analysis. Given a token, it may be considered malicious if there has been at least one rug pull at some point in its activity. However, a token that has not had any rug pull cannot be considered non-malicious, since it could experience a rug pull later on. Therefore, we take advantage of audits carried out by external companies (Certik, Quantstamp, Hacken...). 
+The final list contains 27,588 labelled tokens, 631 labelled as non-malicious tokens and 26,957 labelled as malicious. 
 
 <p align="center">
 <img src="drawdown.png " width="40%" />
 </p>
 
-- 
+- Machine Learning: We defined two methods that use Machine Learning models to discriminate between malicious and non-malicious tokens: Activity based Method and 24 Early Method.  
 
-We defined two methods that use Machine Learning models to discriminate between malicious and non-malicious tokens in different scenarios. In the first scenario, tokens can be evaluated at any block prior to the malicious maneuver. In the second scenario, all tokens are evaluated at a certain time after the creation of their respective pools.
 
 
 <!-- Specifically, we use a new Machine Learning algorithm based on attention mechanisms for tabular data called FT-Transformer. -->
