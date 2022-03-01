@@ -1,11 +1,11 @@
 # SCRF: Template - Research Summary
 
 ---
-title: [Research Summary - DO NOT RUG ON ME: ZERO-DIMENSIONAL SCAM DETECTION]
+title: DO NOT RUG ON ME: ZERO-DIMENSIONAL SCAM DETECTION
 description: One or two sentences of what the post is about.
-tags: [DeFi, Machine learning, Scam Detection,Rug pulls]
-created: [2020-12-25]
-researcher: [Bruno Mazorra and Victor Adan]
+tags: DeFi, Machine learning, Scam Detection,Rug pulls
+created: 2020-12-25
+researcher: Bruno Mazorra and Victor Adan
 ---
 
 > ### TLDR
@@ -24,7 +24,7 @@ Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? C
 
 ### Background
 
-- Uniswap, like other DEXs, has gained much attention this last year because it is a non-custodial and
+Uniswap, like other DEXs, has gained much attention this last year because it is a non-custodial and
 publicly verifiable exchange that allows users to trade digital assets without trusted third parties.
 However, its simplicity and lack of regulation also makes it easy to execute initial coin offering scams
 by listing non-valuable tokens. This method of performing scams is known as rug pull, a phenomenon
