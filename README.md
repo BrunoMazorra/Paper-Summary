@@ -53,7 +53,8 @@ The final list contains 27,588 labelled tokens, 631 labelled as non-malicious to
 
 - Machine Learning: We defined two methods that use Machine Learning models to discriminate between malicious and non-malicious tokens: Activity based Method and 24 Early Method.  
     - Activity based Method: For each token labelled as malicious, we have randomly chosen several evaluation points prior to the maximum drop. Non-malicious tokens have been evaluated throughout their activity. Then, for each evaluation point, we have calculated the token features up to that block and used them to train two ML classifiers (XGBoost and FT-Transformer) in order to find those patterns related to malicious activity. 
-
+    - 24 Early Method: For each labelled token, we have computed its features in each of the 24 hours after its pool creation. Then, we create a different dataset for each hour in which the tokens are evaluated.
+Note that, in this case, we are training the models for each hour, therefore, we only have one evaluation point for each dataset. This also implies that we will have a smaller dataset compared to the other method.
 
 <p align="center">
 <img src="evaluation_points.png " width="60%" />
