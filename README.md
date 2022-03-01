@@ -39,7 +39,6 @@ Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? C
 6. Token Labelling.
     - Provide the methodology to label tokens as scams or non-scams.
     - Overview of the results obtained by the labelling methodology proposed.
-7. 
 
 
 ### Method
@@ -53,7 +52,12 @@ The final list contains 27,588 labelled tokens, 631 labelled as non-malicious to
 </p>
 
 - Machine Learning: We defined two methods that use Machine Learning models to discriminate between malicious and non-malicious tokens: Activity based Method and 24 Early Method.  
+    - Activity based Method: For each token labelled as malicious, we have randomly chosen several evaluation points prior to the maximum drop. Non-malicious tokens have been evaluated throughout their activity. Then, for each evaluation point, we have calculated the token features up to that block and used them to train two ML classifiers (XGBoost and FT-Transformer) in order to find those patterns related to malicious activity. 
 
+
+<p align="center">
+<img src="evaluation_points.png " width="60%" />
+</p>
 
 
 <!-- Specifically, we use a new Machine Learning algorithm based on attention mechanisms for tabular data called FT-Transformer. -->
@@ -64,7 +68,7 @@ For each key step, summarize the nature of the specific approach that the resear
 
 ### Results
 
-As explained above, most tokens are labelled as malicious. This implies that the final dataset will be highly unbalanced. Indeed, it would be enough to label all of them as malicious to achieve an accuracy of 97,7%. Thus, we labelled the non-malicious tokens as one and the malicious tokens as zero and tried to increase the performance in predicting non-malicious tokens. To validate both methods we used 5-fold cross-validation, therefore all the results will be presented as the mean and standard deviation of all folds.
+As explained above, most tokens are labelled as malicious. This implies that the final dataset will be highly unbalanced. Indeed, it would be enough to label all of them as malicious to achieve an accuracy of 97,7%. There are many techniques to deal with this problem, however, none of them have been applied in order to make the results more understandable. Instead, our data augmentation technique consists of choosing more evaluation points for non-malicious tokens than for malicious tokens. In particular, we selected five evaluation points for non-malicious tokens and one for the malicious. In addition, we labelled the non-malicious tokens as one and the malicious tokens as zero and tried to increase the performance in predicting non-malicious tokens. To validate both methods we used 5-fold cross-validation, therefore all the results will be presented as the mean and standard deviation of all folds.
 
 
 #### Activity based Method Results
