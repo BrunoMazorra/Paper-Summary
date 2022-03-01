@@ -24,7 +24,13 @@ Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? C
 
 ### Background
 
--
+- Uniswap, like other DEXs, has gained much attention this last year because it is a non-custodial and
+publicly verifiable exchange that allows users to trade digital assets without trusted third parties.
+However, its simplicity and lack of regulation also makes it easy to execute initial coin offering scams
+by listing non-valuable tokens. This method of performing scams is known as rug pull, a phenomenon
+that already existed in traditional finance but has become more relevant in DeFi. 
+
+In this work, we introduce a methodology to detect rug pulls before the malicious manuever execution.
 
 ### Summary
 
@@ -42,7 +48,7 @@ Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? C
 
 
 ### Method
-
+- **Data collection**:
 - **Labelling**: First, we defined the maximum drop and the recovery of token prices and liquidity time series. The maximum drop (MD) is the largest drop from a peak to a trough. In our context, the maximum drop measures fall in the price or liquidity of the Uniswap listed pools. Also, if more than one month has passed between the last movement or transaction of the token so far, we consider that the token is inactive. 
 On the other hand, unlike malicious tokens, non-malicious tokens cannot be chosen from a liquidity, price, and activity analysis. Given a token, it may be considered malicious if there has been at least one rug pull at some point in its activity. However, a token that has not had any rug pull cannot be considered non-malicious, since it could experience a rug pull later on. Therefore, we take advantage of audits carried out by external companies (Certik, Quantstamp, Hacken...). Thus, a list of 674 tokens labelled as non-malicious have been mined from different sources: [coinmarketcap](https://coinmarketcap.com/view/defi/), [coingecko](https://www.coingecko.com/en/categories/decentralized-finance-defi), [etherscan](https://etherscan.io/tokens).
 The final list contains 27,588 labelled tokens, 631 labelled as non-malicious tokens and 26,957 labelled as malicious. 
