@@ -63,11 +63,12 @@ smart contracts. To obtain the token transactions creation and the source code, 
 
 - **Machine Learning**: We defined two methods that use Machine Learning models to discriminate between malicious and non-malicious tokens: Activity based Method and 24 Early Method.  
     - Activity based Method: For each token labelled as malicious, we have randomly chosen several evaluation points prior to the maximum drop. Non-malicious tokens have been evaluated throughout their activity. Then, for each evaluation point, we have calculated the token features up to that block and used them to train two ML classifiers (XGBoost and FT-Transformer) in order to find those patterns related to malicious activity. 
-    - 24 Early Method: For each labelled token, we have computed its features in each of the 24 hours after its pool creation. Then, we create a different dataset for each hour in which the tokens are evaluated. Note that, in this case, we are training the models for each hour, therefore, we only have one evaluation point for each token. This also implies that we will have a smaller dataset compared to the other method.
+    
+    <p align="center">
+    <img src="evaluation_points.png " width="60%" />
+    </p>
 
-<p align="center">
-<img src="evaluation_points.png " width="60%" />
-</p>
+    - 24 Early Method: For each labelled token, we have computed its features in each of the 24 hours after its pool creation. Then, we create a different dataset for each hour in which the tokens are evaluated. Note that, in this case, we are training the models for each hour, therefore, we only have one evaluation point for each token. This also implies that we will have a smaller dataset compared to the other method.
 
 
 <!-- Specifically, we use a new Machine Learning algorithm based on attention mechanisms for tabular data called FT-Transformer. -->
@@ -78,7 +79,7 @@ For each key step, summarize the nature of the specific approach that the resear
 
 ### Results
 
-As explained above, most tokens are labelled as malicious. This implies that the final dataset will be highly unbalanced. Indeed, it would be enough to label all of them as malicious to achieve an accuracy of 97,7%. There are many techniques to deal with this problem, however, none of them have been applied in order to make the results more understandable. Instead, our data augmentation technique consists of choosing more evaluation points for non-malicious tokens than for malicious tokens. In particular, we selected five evaluation points for non-malicious tokens and one for the malicious. In addition, we labelled the non-malicious tokens as one and the malicious tokens as zero and tried to increase the performance in predicting non-malicious tokens. To validate both methods we used 5-fold cross-validation, therefore all the results will be presented as the mean and standard deviation of all folds.
+Most tokens are labelled as malicious. This implies that the final dataset will be highly unbalanced. Indeed, it would be enough to label all of them as malicious to achieve an accuracy of 97,7%. We used a data augmentation technique that consists of choosing more evaluation points for non-malicious tokens than for malicious tokens. In particular, we selected five evaluation points for non-malicious tokens and one for the malicious. In addition, we labelled the non-malicious tokens as 1 and the malicious tokens as 0 and tried to increase the performance in predicting non-malicious tokens. To validate both methods we used 5-fold cross-validation, therefore all the results will be presented as the mean and standard deviation of all folds.
 
 
 #### Activity based Method Results
@@ -87,9 +88,10 @@ As explained above, most tokens are labelled as malicious. This implies that the
 <img src="Results1 method.png" width="60%" />
 </p>
 
-Both XGBoost and FT-Transformer get high metrics for accuracy, recall, precision, and F1-Score. However, XGBoost outperforms FT-Transformer in all metrics. 
-In particular, XGBoost obtains an accuracy of 0.9936, recall of 0.9540 and precision of 0.9838 in distinguishing non-malicious tokens from scams. In contrast, FT-Transformer gets an accuracy of 0.9890, recall of 0.9180 and precision of 0.9752. 
+- Both XGBoost and FT-Transformer get high metrics for accuracy, recall, precision, and F1-Score. However, XGBoost outperforms FT-Transformer in all metrics. 
+- XGBoost obtains an accuracy of 0.9936, recall of 0.9540 and precision of 0.9838 in distinguishing non-malicious tokens from scams. In contrast, FT-Transformer gets an accuracy of 0.9890, recall of 0.9180 and precision of 0.9752. 
 Therefore, from now we will only analyse on XBoost results. 
+
 <!-- 
 <p align="center">
 <img src="shap_values.png" width="60%" />
@@ -101,13 +103,13 @@ Also, noticed that less block difference between token and pool creation implies
 
 #### 24 Early Method Results
 
-The results of the second method must be understood from another perspective since the problem posed is not the same. The difference with respect to the first method lies in the fact that we evaluate all the tokens at a particular time after the creation of their respective pools. For each labelled token, we have computed its features in each of the 24 hours after its pool creation. Note that, in this case, we are training both models for each hour. Therefore, we only have one evaluation point for each token.
+- For each labelled token, we have computed its features in each of the 24 hours after its pool creation. In this case, we are training both models for each hour. Therefore, we only have one evaluation point for each token.
 
 <p align="center">
 <img src="metric_evolution.png" width="60%" />
 </p>
     
-Our algorithm obtains a very high accuracy even in the first hours. However, the precision, recall and f1-score are lower than in Activity based Method. In the best of cases, i.e. 20 hours after the creation of the pool, our best algorithm obtains a recall of 0.789. This could indicate that while malicious tokens are easily detectable in the first few hours, detecting non-malicious tokens require more time.
+- Our algorithm obtains a very high accuracy even in the first hours. However, the precision, recall and f1-score are lower than in Activity based Method. In the best of cases, i.e. 20 hours after the creation of the pool, our best algorithm obtains a recall of 0.789. This could indicate that while malicious tokens are easily detectable in the first few hours, detecting non-malicious tokens require more time.
 
 #### Unicrypt Results
 
