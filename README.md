@@ -118,6 +118,10 @@ Then, from the unlabelled tokens, we compute their features up to the present ti
 
 ### Discussion and Key Takeaways
 
+- We provided a theoretical classification to understand the different ways of executing the scam, and through the process of identifying rug pulls we found new token smart contract vulnerabilities (composability attacks) and new ways of money laundering.
+- We provided a methodology to find rug pulls that had already been executed. Not surprisingly, we found that more than the 97,7\% of the tokens labelled were rug pulls.
+- We defined two methods that use ML models to distinguish non-malicious tokens from malicious ones. We also verify the high effectiveness of these models in both scenarios.
+
 <!-- Summarize any discussion/commentary sections included by the researchers. Identify the most concise description of any perspectives or viewpoints the researchers explored in this section.
 
 Summarize the conclusions or key takeaways as included by the researchers. -->
