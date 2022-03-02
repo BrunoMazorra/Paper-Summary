@@ -52,7 +52,7 @@ In this work, we introduce a methodology to detect rug pulls before the maliciou
 API. To obtain the state of the Uniswap exchange and the tokens, we used the events produced by their respective
 smart contracts. To obtain the token transactions creation and the source code, we used [Etherscan API](https://etherscan.io/apis).
 - **Labelling**:
-    -  First, we defined the maximum drop and the recovery of token prices and liquidity time series. The maximum drop measures fall in the price or liquidity of the Uniswap listed pools. The recovery represents the largest pump from the bottom. Also, if more than one month has passed between the last movement or transaction of the token so far, we consider that the token is inactive. This made a total of 27,588 tokens that could be tagged as malicious since they were inactive tokens, that had, at some point, lost all their price or liquidity and had not recovered it again.
+    -  First, we defined the maximum drop and the recovery of token prices and liquidity time series. The maximum drop measures fall in the price or liquidity of the Uniswap listed pools. The recovery represents the largest pump from the bottom. Also, if more than one month has passed between the last movement or transaction of the token so far, we consider that the token is inactive. This made a total of 27,588 tokens that could be tagged as malicious since they were inactive tokens, that had, at some point, lost all their value in price or liquidity and had not recovered it again.
   
     - On the other hand, unlike malicious tokens, non-malicious tokens cannot be chosen from a liquidity, price, and activity analysis. Given a token, it may be considered malicious if there has been at least one rug pull at some point in its activity. However, a token that has not had any rug pull cannot be considered non-malicious, since it could experience a rug pull later on. Therefore, we take advantage of audits carried out by external companies (Certik, Quantstamp, Hacken...). Thus, a list of 674 tokens labelled as non-malicious have been mined from different sources: [coinmarketcap](https://coinmarketcap.com/view/defi/), [coingecko](https://www.coingecko.com/en/categories/decentralized-finance-defi), [etherscan](https://etherscan.io/tokens).
 
@@ -63,8 +63,7 @@ smart contracts. To obtain the token transactions creation and the source code, 
 
 - **Machine Learning**: We defined two methods that use Machine Learning models to discriminate between malicious and non-malicious tokens: Activity based Method and 24 Early Method.  
     - Activity based Method: For each token labelled as malicious, we have randomly chosen several evaluation points prior to the maximum drop. Non-malicious tokens have been evaluated throughout their activity. Then, for each evaluation point, we have calculated the token features up to that block and used them to train two ML classifiers (XGBoost and FT-Transformer) in order to find those patterns related to malicious activity. 
-    - 24 Early Method: For each labelled token, we have computed its features in each of the 24 hours after its pool creation. Then, we create a different dataset for each hour in which the tokens are evaluated.
-Note that, in this case, we are training the models for each hour, therefore, we only have one evaluation point for each dataset. This also implies that we will have a smaller dataset compared to the other method.
+    - 24 Early Method: For each labelled token, we have computed its features in each of the 24 hours after its pool creation. Then, we create a different dataset for each hour in which the tokens are evaluated. Note that, in this case, we are training the models for each hour, therefore, we only have one evaluation point for each token. This also implies that we will have a smaller dataset compared to the other method.
 
 <p align="center">
 <img src="evaluation_points.png " width="60%" />
@@ -91,14 +90,14 @@ As explained above, most tokens are labelled as malicious. This implies that the
 Both XGBoost and FT-Transformer get high metrics for accuracy, recall, precision, and F1-Score. However, XGBoost outperforms FT-Transformer in all metrics. 
 In particular, XGBoost obtains an accuracy of 0.9936, recall of 0.9540 and precision of 0.9838 in distinguishing non-malicious tokens from scams. In contrast, FT-Transformer gets an accuracy of 0.9890, recall of 0.9180 and precision of 0.9752. 
 Therefore, from now we will only analyse on XBoost results. 
-
+<!-- 
 <p align="center">
 <img src="shap_values.png" width="60%" />
 </p>
     
 The figure above shows the feature importance in terms of SHAP value on the left side, and, on the right, the impact on the final output.
 Most malicious tokens die in the first 24 hours after the pool is created; by contrast, non-malicious tokens have longer lives. This explains why features such as number of transactions or number of unique addresses have so much weight in the model. 
-Also, noticed that less block difference between token and pool creation implies negative SHAP values, and negative SHAP values should correspond to malicious tokens. This conclusion coincides with (cite) since several of the malicious tokens take advantage of social trends by copying the name of official tokens and taking money from investors who get confused. This technique implies speed in the creation of the token and the pool since otherwise, the trend may be lost.
+Also, noticed that less block difference between token and pool creation implies negative SHAP values, and negative SHAP values should correspond to malicious tokens. This conclusion coincides with (cite) since several of the malicious tokens take advantage of social trends by copying the name of official tokens and taking money from investors who get confused. This technique implies speed in the creation of the token and the pool since otherwise, the trend may be lost. -->
 
 #### 24 Early Method Results
 
@@ -108,8 +107,7 @@ The results of the second method must be understood from another perspective sin
 <img src="metric_evolution.png" width="60%" />
 </p>
     
-In general, XGBoost gets better metrics, except precision in some cases. Also, metrics of the first hour are lower than those of the last.
-Our algorithm obtains a very high accuracy even in the first hours. However, the precision, recall and f1-score are lower than in Activity based Method. In the best of cases, i.e. 20 hours after the creation of the pool, our best algorithm obtains a recall of 0.789. This could indicate that while malicious tokens are easily detectable in the first few hours, non-malicious tokens require more time.
+Our algorithm obtains a very high accuracy even in the first hours. However, the precision, recall and f1-score are lower than in Activity based Method. In the best of cases, i.e. 20 hours after the creation of the pool, our best algorithm obtains a recall of 0.789. This could indicate that while malicious tokens are easily detectable in the first few hours, detecting non-malicious tokens require more time.
 
 #### Unicrypt Results
 
