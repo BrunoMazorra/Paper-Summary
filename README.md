@@ -79,7 +79,7 @@ For each key step, summarize the nature of the specific approach that the resear
 
 ### Results
 
-Most tokens are labelled as malicious. This implies that the final dataset will be highly unbalanced. Indeed, it would be enough to label all of them as malicious to achieve an accuracy of 97,7%. We used a data augmentation technique that consists of choosing more evaluation points for non-malicious tokens than for malicious tokens. In particular, we selected five evaluation points for non-malicious tokens and one for the malicious. In addition, we labelled the non-malicious tokens as 1 and the malicious tokens as 0 and tried to increase the performance in predicting non-malicious tokens. To validate both methods we used 5-fold cross-validation, therefore all the results will be presented as the mean and standard deviation of all folds.
+Most tokens are labelled as malicious. Indeed, it would be enough to label all of them as malicious to achieve an accuracy of 97,7%. Therefore, we used a data augmentation technique that consists of choosing more evaluation points for non-malicious tokens than for malicious tokens. In particular, we selected five evaluation points for non-malicious tokens and one for the malicious. In addition, we labelled the non-malicious tokens as 1 and the malicious tokens as 0 and tried to increase the performance in predicting non-malicious tokens. To validate both methods we used 5-fold cross-validation, therefore all the results will be presented as the mean and standard deviation of all folds.
 
 
 #### Activity based Method Results
