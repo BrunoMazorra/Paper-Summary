@@ -18,12 +18,6 @@ researcher: Bruno Mazorra and Victor Adan
 
 Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? Can we predict if a project is a rug pull before the malicius manuver? 
 
-### Citation
-
-- Mazorra, Bruno, Victor Adan, and Vanesa Daza. "Do not rug on me: Zero-dimensional Scam Detection." arXiv preprint arXiv:2201.07220 (2022).
-
-### Background
-
 Uniswap, like other DEXs, has gained much attention this last year because it is a non-custodial and
 publicly verifiable exchange that allows users to trade digital assets without trusted third parties.
 However, its simplicity and lack of regulation also makes it easy to execute initial coin offering scams
@@ -31,6 +25,26 @@ by listing non-valuable tokens. This method of performing scams is known as rug 
 that already existed in traditional finance but has become more relevant in DeFi. 
 
 In this work, we introduce a methodology to detect rug pulls before the malicious manuever execution.
+### Citation
+
+- Mazorra, Bruno, Victor Adan, and Vanesa Daza. "Do not rug on me: Zero-dimensional Scam Detection." arXiv preprint arXiv:2201.07220 (2022).
+
+### Background
+
+- Smart contract:
+- Decentralized Exchange:
+- Rug pull:
+- Unicrypt:
+- Transaction graph:
+- HHI:
+- Cluster coefficient:
+- Labelling:
+- Precision and recall:
+- ML classifier:
+- Cross validation:
+- Data agumentation:
+
+
 
 ### Summary
 
