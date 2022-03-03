@@ -34,7 +34,6 @@ In this work, we introduce a methodology to detect rug pulls before the maliciou
 - Smart contract:
 - Decentralized Exchange:
 - Rug pull:
-- Unicrypt:
 - Transaction graph:
 - HHI:
 - Cluster coefficient:
@@ -125,10 +124,6 @@ Also, noticed that less block difference between token and pool creation implies
     
 - Our algorithm obtains a very high accuracy even in the first hours. However, the precision, recall and f1-score are lower than in Activity based Method. In the best of cases, i.e. 20 hours after the creation of the pool, our best algorithm obtains a recall of 0.789. This could indicate that while malicious tokens are easily detectable in the first few hours, detecting non-malicious tokens require more time.
 
-#### Unicrypt Results
-
-First, from our list of labelled tokens, 745 use Unicrypt, 725 are labelled as malicious and 20 as non-malicious.
-Then, from the unlabelled tokens, we compute their features up to the present time and use the Activity based Method with XGBoost algorithm to evaluate them. Based on these predictions, 2544 of non-labelled tokens using Unicrypt, 2211 are predicted to be malicious and 333 non-malicious.
 
 ### Discussion and Key Takeaways
 
