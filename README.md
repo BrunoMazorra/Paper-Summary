@@ -23,7 +23,7 @@ However, its simplicity and lack of regulation also makes it easy to execute ini
 by listing non-valuable tokens. This method of performing scams is known as rug pull, a phenomenon
 that already existed in traditional finance but has become more relevant in DeFi. 
 
-Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? Can we predict if a project is a rug pull before the malicius manuver? 
+Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? Can we predict if a project is a rug pull before the malicious manuver? 
 
 ### Citation
 
