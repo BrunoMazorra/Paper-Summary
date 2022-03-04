@@ -42,8 +42,8 @@ project and take the investors’ funds as profits
 - Herfindahl-Hirschman Index: A measure of market concentration and is used to calculate market competitiveness
 - Cluster coefficient: Is a measure of network segregation that captures the
 connections of individual nodes and their neighbors.
-- Precision: Is defined by 
-- Recall: Is defined by
+- Precision: Is defined by     <img src="precision.png " width="60%" />
+- Recall: Is defined by     <img src="recall.png " width="60%" />
 - ML classifier:
 - Cross validation:
 - Data agumentation:
