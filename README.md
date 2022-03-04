@@ -31,12 +31,17 @@ In this work, we introduce a methodology to detect rug pulls before the maliciou
 
 ### Background
 
-- Smart contract:
-- Decentralized Exchange:
-- Rug pull:
-- Transaction graph:
-- HHI:
-- Cluster coefficient:
+- Smart contract: Programs which are deployed on the blockchain public ledger and are executed in transactions and alter the state of the ledger atomically.
+- Decentralized Exchange: Decentralized Exchanges (DEXs) are a category of Decentralized Finance (DeFi)
+protocol that allow the non-custodial exchange of digital assets. All trades are executed 
+on-chain and are, thus, publicly verifiable. The policy that matches buyers and sellers (or
+traders and liquidity providers) is hard-coded in a smart contract
+- Rug pull: Is a malicious operation or set of operations in the cryptocurrency industry where the developers abandon the 
+project and take the investors’ funds as profits
+- Transaction graph: Weighted graph induced by token transactions. 
+- Herfindahl-Hirschman Index: A measure of market concentration and is used to calculate market competitiveness
+- Cluster coefficient: Is a measure of network segregation that captures the
+connections of individual nodes and their neighbors
 - Labelling:
 - Precision and recall:
 - ML classifier:
@@ -50,7 +55,7 @@ In this work, we introduce a methodology to detect rug pulls before the maliciou
 1. Introduction.
 2. Related Work.
 3. Preliminars
-    - Backround.
+    - Background.
 4. Malicious Uniswap Maneuvers
     - Classification of different type of rug pulls.
 5. Data Collection:
