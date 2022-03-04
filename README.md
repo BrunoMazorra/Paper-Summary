@@ -42,11 +42,11 @@ project and take the investors’ funds as profits
 - Herfindahl-Hirschman Index: A measure of market concentration and is used to calculate market competitiveness
 - Cluster coefficient: Is a measure of network segregation that captures the
 connections of individual nodes and their neighbors.
-- Precision: Is defined by     <img src="precision.png " width="60%" />
-- Recall: Is defined by     <img src="recall.png " width="60%" />
-- ML classifier:
-- Cross validation:
-- Data agumentation:
+- Precision: Is defined by  <img src="precision.png " width="15%" />
+- Recall: Is defined by  <img src="recall.png " width="15%" />
+- Machine learning classifier: Is an algorithm that automatically categorizes data into one or more set of classes.
+- Cross validation: is a resampling method that uses different portions of the data to test and train a model on different iterations. It provides information about how well does a machine learning algorithm or a model generalize.
+- Data agumentation: A tecnique to increase the diversity of the training data set by applying small random perturbations to the existing data set.
 
 
 
