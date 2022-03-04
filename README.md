@@ -41,9 +41,9 @@ project and take the investors’ funds as profits
 - Transaction graph: Weighted graph induced by token transactions. 
 - Herfindahl-Hirschman Index: A measure of market concentration and is used to calculate market competitiveness
 - Cluster coefficient: Is a measure of network segregation that captures the
-connections of individual nodes and their neighbors
-- Labelling:
-- Precision and recall:
+connections of individual nodes and their neighbors.
+- Precision: Is defined by 
+- Recall: Is defined by
 - ML classifier:
 - Cross validation:
 - Data agumentation:
