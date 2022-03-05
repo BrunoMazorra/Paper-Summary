@@ -154,7 +154,9 @@ Summarize the conclusions or key takeaways as included by the researchers. -->
 Share any follow-up work discussed by the researchers.
  -->
  
- 
+- In this paper we showed that different machine learning tecniques can be used to detect scams before executing the malicious maneuver without the need of off-chain data.
+- The efficiency and the accuracy of the results could be improved using novel tecniques such as topology data analyisis.
+- Due to the market shifting from Uniswap V2 to Uniswap V3, an obvious follow up would be to study the rug pulls in Uniswap V3 and develop new tools to detect them.
 ### Applicability
 
 - The algorithm and the methodology provided in the paper could be developed to help and protect uninformed investors in web3 plataforms.
