@@ -61,6 +61,9 @@ connections of individual nodes and their neighbors.
 6. Token Labelling.
     - Provide the methodology to label tokens as scams or non-scams.
     - Overview of the results obtained by the labelling methodology proposed.
+7. Scam detection.
+8. Conclusions.
+9. Future Work
 
 
 ### Method
