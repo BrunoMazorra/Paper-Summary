@@ -1,12 +1,10 @@
 # SCRF: Template - Research Summary
 
----
 title: DO NOT RUG ON ME: ZERO-DIMENSIONAL SCAM DETECTION
 description: Rug pulls and scam detection.
 tags: DeFi, Machine learning, Scam Detection,Rug pulls
 created: 2020-12-25
 researcher: Bruno Mazorra and Victor Adan
----
 
 > ### TLDR
 >
