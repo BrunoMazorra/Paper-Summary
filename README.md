@@ -151,5 +151,5 @@ Share any follow-up work discussed by the researchers.
  
 ### Applicability
 
-- To better understand the methodology used by scammers to execute rug pulls.
-- Provide machine learning tools to protect users from permanet losses. 
+- The algorithm and the methodology provided in the paper could be developed to help and protect uninformed investors in web3 plataforms.
+- With help of exchanges, the algorithm produced to detect rug pulls will provided helpful forensic analyisis to detect scammers.
