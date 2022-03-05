@@ -2,7 +2,7 @@
 
 ---
 title: DO NOT RUG ON ME: ZERO-DIMENSIONAL SCAM DETECTION
-description: One or two sentences of what the post is about.
+description: Rug pulls and scam detection.
 tags: DeFi, Machine learning, Scam Detection,Rug pulls
 created: 2020-12-25
 researcher: Bruno Mazorra and Victor Adan
