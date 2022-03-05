@@ -80,6 +80,12 @@ smart contracts. To obtain the token transactions creation and the source code, 
 <img src="drawdown.png " width="40%" />
 </p>
 
+- **Features**: We compute the following features to extract relevant information about the tokens listed in Uniswap V2.
+
+<p align="center">
+<img src="Captura de pantalla de 2022-03-05 14-07-58.png" width="60%" />
+</p>
+
 - **Machine Learning**: We defined two methods that use Machine Learning models to discriminate between malicious and non-malicious tokens: Activity based Method and 24 Early Method.  
     - Activity based Method: For each token labelled as malicious, we have randomly selected several evaluation points before the maximum drop. Non-malicious tokens have been evaluated throughout their activity. Then, for each evaluation point, we calculated the token features up to that block and used them to train two ML classifiers (XGBoost and FT-Transformer) to find patterns related to malicious activity. 
     
