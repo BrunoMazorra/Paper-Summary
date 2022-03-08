@@ -33,15 +33,15 @@ Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? C
 - Decentralized Exchange: Decentralized Exchanges (DEXs) are a category of Decentralized Finance (DeFi)
 protocol that allow the non-custodial exchange of digital assets. All trades are executed 
 on-chain and are, thus, publicly verifiable. The policy that matches buyers and sellers (or
-traders and liquidity providers) is hard-coded in a smart contract
+traders and liquidity providers) is hard-coded in a smart contract.
 - Rug pull: Is a malicious operation or set of operations in the cryptocurrency industry where the developers abandon the 
-project and take the investors’ funds as profits
+project and take the investors’ funds as profits.
 - Transaction graph: Weighted graph induced by token transactions. 
 - Herfindahl-Hirschman Index: A measure of market concentration and is used to calculate market competitiveness
 - Cluster coefficient: Is a measure of network segregation that captures the
 connections of individual nodes and their neighbors.
-- Precision: Is defined by  <img src="precision.png " width="15%" />
-- Recall: Is defined by  <img src="recall.png " width="15%" />
+- Precision: Is defined by  <img src="precision.png " width="15%" />.
+- Recall: Is defined by  <img src="recall.png " width="15%" />.
 - Machine learning classifier: Is an algorithm that automatically categorizes data into one or more set of classes.
 - Cross validation: is a resampling method that uses different portions of the data to test and train a model on different iterations. It provides information about how well does a machine learning algorithm or a model generalize.
 - Data agumentation: A tecnique to increase the diversity of the training data set by applying small random perturbations to the existing data set.
