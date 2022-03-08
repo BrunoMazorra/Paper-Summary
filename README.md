@@ -44,8 +44,7 @@ connections of individual nodes and their neighbors.
 - Recall: Is defined by  <img src="precision.png " width="15%" />.
 - Machine learning classifier: Is an algorithm that automatically categorizes data into one or more set of classes.
 - Cross validation: is a resampling method that uses different portions of the data to test and train a model on different iterations. It provides information about how well does a machine learning algorithm or a model generalize.
-- Data agumentation: A tecnique to increase the diversity of the training data set by applying small random perturbations to the existing data set.
-
+- Data agumentation: Data augmentation is a technique that allows us to augment our training dataset to improve accuracy, generalisation, and control overfitting.
 
 
 ### Summary
