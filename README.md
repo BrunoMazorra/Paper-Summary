@@ -159,5 +159,5 @@ Share any follow-up work discussed by the researchers.
 - Due to the market shifting from Uniswap V2 to Uniswap V3, an obvious follow up would be to study the rug pulls in Uniswap V3 and develop new tools to detect them.
 ### Applicability
 
-- The algorithm and the methodology provided in the paper could be developed to help and protect uninformed investors in web3 plataforms.
+- The algorithm and the methodology provided in the paper could be developed to help and protect uninformed investors in blockchain distributed apps.
 - With help of exchanges, the algorithm produced to detect rug pulls will provided helpful forensic analyisis to detect scammers.
