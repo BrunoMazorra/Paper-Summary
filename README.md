@@ -26,7 +26,7 @@ Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? C
 ### Citation
 
 - Mazorra, Bruno, Victor Adan, and Vanesa Daza. "Do not rug on me: Zero-dimensional Scam Detection." arXiv preprint arXiv:2201.07220 (2022).
-
+- Mazorra, B., Adan, V., & Daza, V. (2022). Do Not Rug on Me: Leveraging Machine Learning Techniques for Automated Scam Detection. Mathematics, 10(6), 949.
 ### Background
 
 - Smart contract: Programs which are deployed on the blockchain public ledger and are executed in transactions and alter the state of the ledger atomically.
