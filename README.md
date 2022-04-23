@@ -53,8 +53,14 @@ connections of individual nodes and their neighbors.
 2. Related Work.
 3. Preliminars
     - Background.
-4. Malicious Uniswap Maneuvers
+4. Malicious Uniswap Maneuvers:a malicious operation or set
+of operations in the cryptocurrency industry where the developers abandon the project and
+take the investors’ funds as profits. 
     - Classification of different type of rug pulls.
+        - Rug pulls
+        - Pump-and-dump schemes
+        - Money laundering
+        - Others
 5. Data Collection:
     - Overview of the method used to extract all the necessary data.
 6. Token Labelling.
