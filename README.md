@@ -67,8 +67,9 @@ take the investors’ funds as profits.
     - Provide the methodology to label tokens as scams or non-scams.
     - Overview of the results obtained by the labelling methodology proposed.
 7. Scam detection.
-8. Conclusions.
-9. Future Work
+    - Define two methods (Activity based Method and 24 Early Method) that use Machine Learning models to discriminate between malicious and non-malicious tokens in different scenarios.
+9. Conclusions.
+10. Future Work
 
 
 ### Method
