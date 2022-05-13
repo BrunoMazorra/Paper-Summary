@@ -1,50 +1,44 @@
-# SCRF: Template - Research Summary
+# Research Summary: DO NOT RUG ON ME: ZERO-DIMENSIONAL SCAM DETECTION
 
-- Title: DO NOT RUG ON ME: ZERO-DIMENSIONAL SCAM DETECTION
-- Description: Rug pulls and scam detection.
-- Tags: DeFi, Machine learning, Scam Detection,Rug pulls
-- Created: 2020-12-25
-- Researcher: Bruno Mazorra and Victor Adan
+### TLDR
 
-> ### TLDR
->
-> - The reaserchers expand the dataset of Uniswap v2 scam tokens.
-> - They provide  a theoretical classification of three different types of rug pulls and provide tools to identify them.
-> - The authors introduce two highly accurate and precise Machine learning-based models to discriminate between malicious and nonmalicious tokens in different scenarios before the malicious manuever.
+- The reaserchers expand the dataset of Uniswap v2 scam tokens.
+- They provide a theoretical classification of three different types of rug pulls and provide tools to identify them.
+- The authors introduce two highly accurate and precise Machine learning-based models to discriminate between malicious and nonmalicious tokens in different scenarios before the malicious manuever.
 
 ### Core Research Question
 
-
-Uniswap, like other DEXs, has gained much attention this last year because it is a non-custodial and
+(Uniswap, like other DEXs, has gained much attention this last year because it is a non-custodial and
 publicly verifiable exchange that allows users to trade digital assets without trusted third parties.
 However, its simplicity and lack of regulation also makes it easy to execute initial coin offering scams
 by listing non-valuable tokens. This method of performing scams is known as rug pull, a phenomenon
-that already existed in traditional finance but has become more relevant in DeFi. 
+that already existed in traditional finance but has become more relevant in DeFi.)
 
 Do rug pulls in Constant Function Marker Makers (CFMM) share similar features? Can we predict if a project is a rug pull before the malicious manuver? 
 
 ### Citation
 
-- Mazorra, Bruno, Victor Adan, and Vanesa Daza. "Do not rug on me: Zero-dimensional Scam Detection." arXiv preprint arXiv:2201.07220 (2022).
-- Mazorra, B., Adan, V., & Daza, V. (2022). Do Not Rug on Me: Leveraging Machine Learning Techniques for Automated Scam Detection. Mathematics, 10(6), 949.
+Mazorra, Bruno, Victor Adan, and Vanesa Daza. "Do not rug on me: Zero-dimensional Scam Detection." arXiv preprint arXiv:2201.07220 (2022). https://arxiv.org/abs/2201.07220
+
+Mazorra, B., Adan, V., & Daza, V. (2022). Do Not Rug on Me: Leveraging Machine Learning Techniques for Automated Scam Detection. Mathematics, 10(6), 949. https://www.mdpi.com/2227-7390/10/6/949
+
 ### Background
 
-- Smart contract: Programs which are deployed on the blockchain public ledger and are executed in transactions and alter the state of the ledger atomically.
-- Decentralized Exchange: Decentralized Exchanges (DEXs) are a category of Decentralized Finance (DeFi)
+- **Decentralized Exchange (DEXs):** A category of Decentralized Finance (DeFi)
 protocol that allow the non-custodial exchange of digital assets. All trades are executed 
 on-chain and are, thus, publicly verifiable. The policy that matches buyers and sellers (or
 traders and liquidity providers) is hard-coded in a smart contract.
-- Rug pull: Is a malicious operation or set of operations in the cryptocurrency industry where the developers abandon the 
+- **Rug pull:** A malicious operation or set of operations in the cryptocurrency industry where the developers abandon the 
 project and take the investors’ funds as profits.
-- Transaction graph: Weighted graph induced by token transactions. 
-- Herfindahl-Hirschman Index: A measure of market concentration and is used to calculate market competitiveness
-- Cluster coefficient: Is a measure of network segregation that captures the
+- **Transaction graph:** Weighted graph induced by token transactions. 
+- **Herfindahl-Hirschman Index:** A measure of market concentration and is used to calculate market competitiveness
+- **Cluster coefficient:** A measure of network segregation that captures the
 connections of individual nodes and their neighbors.
-- Precision: Is defined by  <img src="recall.png " width="15%" />.
-- Recall: Is defined by  <img src="precision.png " width="15%" />.
-- Machine learning classifier: Is an algorithm that automatically categorizes data into one or more set of classes.
-- Cross validation: is a resampling method that uses different portions of the data to test and train a model on different iterations. It provides information about how well does a machine learning algorithm or a model generalize.
-- Data agumentation: Data augmentation is a technique that allows us to augment our training dataset to improve accuracy, generalisation, and control overfitting.
+- **Precision:** Defined by $\frac{\text{ True Positives}}{\text{True Positives + False Positives}}$.
+- **Recall:** Defined by $\frac{\text{True Positives}}{\text{True Positives+False Negatives}}$.
+- **Machine learning classifier:** Is an algorithm that automatically categorizes data into one or more set of classes.
+- **Cross validation:** A resampling method that uses different portions of the data to test and train a model on different iterations. It provides information about how well does a machine learning algorithm or a model generalize.
+- **Data agumentation:** A technique that allows us to augment our training dataset to improve accuracy, generalisation, and control overfitting.
 
 
 ### Summary
